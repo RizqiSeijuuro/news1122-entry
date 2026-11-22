@@ -15,6 +15,9 @@ import zlib
 # ---------------------------------------------------------------------------
 # Canvas / palette
 # ---------------------------------------------------------------------------
+# NOTE: all coordinates below are plain ints, so rendering is fully
+# reproducible run-to-run (no randomness, no wall-clock reads, no I/O order
+# dependence) and the resulting PNG bytes are deterministic.
 
 WIDTH = 1024
 HEIGHT = 1024
